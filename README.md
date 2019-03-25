@@ -35,17 +35,17 @@ strava:
 
 All stat fields are optional. Options are:
 
-```biggest_ride_distance```
-```biggest_climb_elevation_gain```
-```recent_ride_totals```
-```recent_run_totals```
-```recent_swim_totals```
-```ytd_ride_totals```
-```ytd_run_totals```
-```ytd_swim_totals```
-```all_ride_totals```
-```all_run_totals```
-```all_swim_totals```
+- ```biggest_ride_distance``` Furthest distance cycled in one session
+- ```biggest_climb_elevation_gain``` Biggest cycle climbed in one session
+- ```recent_ride_totals```
+- ```recent_run_totals```
+- ```recent_swim_totals```
+- ```ytd_ride_totals```
+- ```ytd_run_totals```
+- ```ytd_swim_totals```
+- ```all_ride_totals```
+- ```all_run_totals```
+- ```all_swim_totals```
 
 
 ## Credits
