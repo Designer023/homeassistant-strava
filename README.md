@@ -35,8 +35,8 @@ strava:
 
 All stat fields are optional. Options are:
 
-- ```biggest_ride_distance``` Furthest distance cycled in one session
-- ```biggest_climb_elevation_gain``` Biggest cycle climbed in one session
+- ```biggest_ride_distance``` Furthest distance cycled in one activity
+- ```biggest_climb_elevation_gain``` Biggest cycle climbed in one activity
 - ```recent_ride_totals```
 - ```recent_run_totals```
 - ```recent_swim_totals```
@@ -47,6 +47,14 @@ All stat fields are optional. Options are:
 - ```all_run_totals```
 - ```all_swim_totals```
 
+Totals fields contain:
+
+- ```count``` - Number of activities
+- ```distance``` - Distance covered in m and km
+- ```moving_time```
+- ```elapsed_time```
+- ```elevation_gain``` - Elevation gained over sessions
+- ```achievement_count```
 
 ## Credits
 
