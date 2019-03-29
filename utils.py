@@ -39,15 +39,15 @@ def _get_athlete_data(hass_domain_config):
             access_token = client_secrets['access_token']
 
         if client_secrets['expires_at'] - 3000 < int(datetime.now().timestamp()):
-            access_token = _refresh_access_token(access_token)
+            access_token = _refresh_access_token(hass_domain_config, access_token)
     except (JSONDecodeError, KeyError) as e:
         print(e)
-        access_token = _refresh_access_token('abcdefghijklmnopqrstuvwxyz')
+        access_token = _refresh_access_token(hass_domain_config, 'abcdefghijklmnopqrstuvwxyz')
 
     athlete = _get_athlete()
 
     if 'errors' in athlete.json() and athlete.json()['message'] == 'Authorization Error':
-        access_token = _refresh_access_token(access_token)
+        access_token = _refresh_access_token(hass_domain_config, access_token)
         athlete = _get_athlete()
 
     return athlete.json()  # ['ytd_run_totals' if ytd else 'all_run_totals'][datum]
